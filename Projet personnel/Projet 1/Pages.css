@@ -1,0 +1,82 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:15px;
+    margin: 0;
+}
+
+:root {
+    /* Couleurs */
+    --blanc             :rgb(255,255,255);
+    --rouge             :rgb(255,0,0);
+    --bleu              :rgb(0,0,255);
+    --bleu-moyen        :rgb(49,156,231);
+    --bleu-claire       :rgb(1,121,173);
+    --gris-tres-fonce   :rgb(48,48,48);
+    --noir-bleu         :rgb(25,34,5);
+    --noir-peu-claire   :rgb(18,27,46);
+    --noir              :rgb(0,0,0);
+
+    --Battle_net-haut   :var(--bleu-moyen);
+    --Battle_net-bas    :var(--noir-bleu);
+    --steam-haut        :var(--noir-peu-claire);
+    --steam-bas         :var(--bleu-claire);
+    --epic_games-haut   :var(--gris-tres-fonce);
+    --epic_games-bas    :var(--noir);
+
+    --largeur-max       : 100%;
+    --padding-mini      :10px;
+    
+}
+
+.Toute_la_page {
+    width: 100%;
+    background-color: blue;
+}
+
+.Menu_Plateformes {
+    box-sizing: content-box;
+
+    display: flex;
+    padding:5px;
+
+    margin:auto;
+
+    list-style-type: none;
+
+    background-color: var(--bleu);
+
+    position:fixed;
+
+}
+
+.Plateforme {
+
+
+    text-decoration: none;
+
+    background-color: var(--rouge);
+    color:var(--noir);
+
+    position: relative;
+
+    padding:var(--padding-mini);
+
+    border-radius: 15px;
+
+    margin-right: 5px;
+}
+
+.Battle_net:hover {
+    background: linear-gradient(var(--Battle_net-haut),var(--Battle_net-bas));
+    color:white
+}
+
+.Steam:hover {
+    background: linear-gradient( to bottom right,var(--steam-haut),var(--steam-bas));
+    color:white;
+}
+
+.Epic_Games:hover {
+    background: linear-gradient(var(--epic_games-haut),var(--epic_games-bas));
+    color:white;
+}
